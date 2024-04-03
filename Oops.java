@@ -14,9 +14,18 @@ public class Oops {
             System.out.println(p1.name + " " + p1.Gender + " " + p1.age);
             System.out.println(p2.name + " " + p2.Gender + " " + p2.age);
             System.out.println(Person.count);
+
+            Developer d1 = new Developer(22,"Harsh");
+            d1.eat("Breakfast");
+            d1.walk(988);
         }
     }
-    
+    class Developer extends Person{
+        public Developer(int age, String name){
+            super(age,name);
+        }
+
+    }
 
 class Person{
     static int count;
